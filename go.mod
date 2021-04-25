@@ -2,7 +2,4 @@ module github.com/marcustut/go-pwa
 
 go 1.15
 
-require (
-	github.com/google/uuid v1.2.0 // indirect
-	github.com/maxence-charriere/go-app/v7 v7.2.0
-)
+require github.com/maxence-charriere/go-app/v8 v8.0.2
