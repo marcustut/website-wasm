@@ -1,0 +1,17 @@
+:root {
+  --accent: "#FD4D4D";
+  --white: "#FFFFFF";
+  --gray100: "#DEE3EA";
+  --gray200: "#B2BDCD";
+  --gray300: "#5D7290";
+  --gray400: "#4F617A";
+  --gray500: "#404F64";
+	--gray600: "#323D4D";
+	--gray700: "#242C37";
+	--gray800: "#151A21";
+	--gray900: "#0B0E11";
+}
+
+input::placeholder {
+  color: var(--gray300);
+}
