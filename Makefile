@@ -7,5 +7,8 @@ build:
 run: build
 	./$(APP_NAME)
 
+tailwind:
+	npx tailwindcss -i ./web/styles.css -o ./web/tailwind.css -w
+
 dev:
-	nodemon -e go,css --exec make run --signal SIGTERM
+	air

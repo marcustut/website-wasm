@@ -1,17 +1,95 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
 :root {
-  --accent: "#FD4D4D";
-  --white: "#FFFFFF";
-  --gray100: "#DEE3EA";
-  --gray200: "#B2BDCD";
-  --gray300: "#5D7290";
-  --gray400: "#4F617A";
-  --gray500: "#404F64";
-	--gray600: "#323D4D";
-	--gray700: "#242C37";
-	--gray800: "#151A21";
-	--gray900: "#0B0E11";
+  --black: #06080a;
+  --bg0: #24283b;
+  --bg1: #282d42;
+  --bg2: #2f344d;
+  --bg3: #333954;
+  --bg4: #3a405e;
+  --bg_red: #ff7a93;
+  --diff_red: #803d49;
+  --bg_green: #b9f27c;
+  --diff_green: #618041;
+  --bg_blue: #7da6ff;
+  --diff_blue: #3e5380;
+  --fg: #a9b1d6;
+  --red: #F7768E;
+  --orange: #FF9E64;
+  --yellow: #E0AF68;
+  --green: #9ECE6A;
+  --blue: #7AA2F7;
+  --purple: #ad8ee6;
+  --grey: #444B6A;
 }
 
-input::placeholder {
-  color: var(--gray300);
+body {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  background-color: var(--bg0);
 }
+
+h1,
+h2,
+h3,
+h4,
+p {
+  line-height: 1.6;
+}
+
+h1,
+h2,
+h3,
+h4,
+p.bold {
+  font-weight: 700;
+}
+
+h1 {
+  font-size: 4rem;
+}
+
+h2 {
+  font-size: 2.8rem;
+}
+
+h3 {
+  font-size: 2rem;
+}
+
+h4 {
+  font-size: 1.4rem;
+}
+
+p {
+  font-size: 1rem;
+  font-weight: 500;
+}
+
+p.small {
+  font-size: 0.85rem;
+}
+
+@layer base {
+  [type="text"],
+  [type="email"],
+  [type="url"],
+  [type="password"],
+  [type="number"],
+  [type="date"],
+  [type="datetime-local"],
+  [type="month"],
+  [type="search"],
+  [type="tel"],
+  [type="time"],
+  [type="week"],
+  [multiple],
+  textarea,
+  select {
+    @apply p-0 border-0 focus:outline-none focus:ring-0;
+  }
+}
+
