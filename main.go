@@ -44,6 +44,7 @@ func main() {
 		Styles: []string{
 			"/web/tailwind.css",
 		},
+    Resources: app.GitHubPages("marcustut/website-wasm"),
 	}
 
 	opts := options{Port: 8001}
