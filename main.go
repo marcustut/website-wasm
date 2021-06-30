@@ -44,7 +44,6 @@ func main() {
 		Styles: []string{
 			"/web/tailwind.css",
 		},
-    Resources: app.GitHubPages("marcustut/website-wasm"),
 	}
 
 	opts := options{Port: 8001}
@@ -62,6 +61,7 @@ func main() {
   case "local":
     runLocal(ctx, &h, opts)
   case "github":
+    h.Resources = app.GitHubPages("website-wasm")
     generateGitHubPages(ctx, &h, githubOpts)
   }
 }

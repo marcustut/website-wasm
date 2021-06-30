@@ -13,8 +13,8 @@
       "sizes": "512x512"
     }
   ],
-  "scope": "/",
-  "start_url": "/",
+  "scope": "/website-wasm/",
+  "start_url": "/website-wasm/",
   "background_color": "#24283b",
   "theme_color": "#24283b",
   "display": "standalone"
